@@ -1,11 +1,11 @@
 package seekable
 
 import (
-	"io"
 	"errors"
+	"github.com/qiniu/bytes"
+	"io"
 	"io/ioutil"
 	"net/http"
-	"github.com/qiniu/bytes"
 )
 
 // ---------------------------------------------------
@@ -59,4 +59,3 @@ func ReadAll(req *http.Request) (b []byte, err error) {
 }
 
 // ---------------------------------------------------
-
